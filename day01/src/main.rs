@@ -1,5 +1,5 @@
 fn main() {
-    println!("Day 1 data retrieval.");
+    println!("Day 1 data retrieval initiated....");
     let input_data = include_str!("./input1.txt");
     let output = acquire_calibration_value(input_data);
     println!("The calibration value is {}", output.to_string())
@@ -16,8 +16,8 @@ fn acquire_calibration_value(input_data: &str) -> u32 {
                 Some(int2) => format!("{int1}{int2}"),
                 None => format!("{int1}{int1}"), // edge case like treb7uchet
             }
-            .parse::<u32>()
-            .expect("Need a valid number pal")
+                .parse::<u32>()
+                .expect("Need a valid number pal")
         })
         .sum::<u32>();
 

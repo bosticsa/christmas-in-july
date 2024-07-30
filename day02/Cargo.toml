@@ -1,7 +1,6 @@
 [package]
-name = "christmas-in-july"
+name = "day02"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-rstest = "0.21.0"
